@@ -156,5 +156,5 @@ data:
           effect: NoSchedule
       containers:
       - name: helper-pod
-        image: busybox
+        image: rancher/local-path-provisioner:v0.0.32
         imagePullPolicy: IfNotPresent
