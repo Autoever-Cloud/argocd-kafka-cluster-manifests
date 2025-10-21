@@ -27,6 +27,12 @@ spec:
       offsets.topic.replication.factor: 3        # ✅ 내부 토픽도 3
       transaction.state.log.replication.factor: 3
       transaction.state.log.min.isr: 1
+      controller.quorum.voters: |
+        0@kafka-cluster-knp-0.kafka-cluster-kafka-brokers.kafka.svc.cluster.local:9090,
+        1@kafka-cluster-knp-1.kafka-cluster-kafka-brokers.kafka.svc.cluster.local:9090,
+        2@kafka-cluster-knp-2.kafka-cluster-kafka-brokers.kafka.svc.cluster.local:9090
+
+
   entityOperator:
     topicOperator: {}
     userOperator: {}
