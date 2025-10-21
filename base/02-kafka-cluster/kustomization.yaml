@@ -4,6 +4,6 @@ kind: Kustomization
 resources:
 - 00-namespace.yaml
 - 01-metallb-config.yaml
-- bridge.yaml
-- kraft.yaml
-- topics.yaml
+#- bridge.yaml
+#- kraft.yaml
+#- topics.yaml
