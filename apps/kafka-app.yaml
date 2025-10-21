@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: child-02-kafka-cluster
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/Autoever-Cloud/argocd-kafka-cluster-manifests.git"
+    targetRevision: HEAD
+    path: base/02-kafka-cluster
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kafka # 모든 Kafka 리소스를 kafka 네임스페이스에 배포
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
