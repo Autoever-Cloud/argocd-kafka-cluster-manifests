@@ -6,8 +6,8 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # 클러스터 이름 (Kafka 리소스 metadata.name)
 spec:
-  partitions: 3             # 파티션 수
-  replicas: 3               # 복제본 수 (브로커 수와 맞추는 게 안전)
+  partitions: 1             # 파티션 수
+  replicas: 1               # 복제본 수 (브로커 수와 맞추는 게 안전)
   config:
     retention.ms: 60000     # 메시지 보관 시간 (1분, 테스트용)
 ---
@@ -19,8 +19,8 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # 클러스터 이름 (Kafka 리소스 metadata.name)
 spec:
-  partitions: 3             # 파티션 수
-  replicas: 3               # 복제본 수 (브로커 수와 맞추는 게 안전)
+  partitions: 1             # 파티션 수
+  replicas: 1               # 복제본 수 (브로커 수와 맞추는 게 안전)
   config:
     retention.ms: 60000     # 메시지 보관 시간 (1분, 테스트용)
 
@@ -34,8 +34,8 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # 클러스터 이름 (Kafka 리소스 metadata.name)
 spec:
-  partitions: 3             # 파티션 수
-  replicas: 3               # 복제본 수 (브로커 수와 맞추는 게 안전)
+  partitions: 1             # 파티션 수
+  replicas: 1               # 복제본 수 (브로커 수와 맞추는 게 안전)
   config:
     retention.ms: 60000     # 메시지 보관 시간 (1분, 테스트용)
 
@@ -49,8 +49,8 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # 클러스터 이름 (Kafka 리소스 metadata.name)
 spec:
-  partitions: 3             # 파티션 수
-  replicas: 3               # 복제본 수 (브로커 수와 맞추는 게 안전)
+  partitions: 1             # 파티션 수
+  replicas: 1               # 복제본 수 (브로커 수와 맞추는 게 안전)
   config:
     retention.ms: 60000     # 메시지 보관 시간 (1분, 테스트용)
 
@@ -64,8 +64,8 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # 클러스터 이름 (Kafka 리소스 metadata.name)
 spec:
-  partitions: 3             # 파티션 수
-  replicas: 3               # 복제본 수 (브로커 수와 맞추는 게 안전)
+  partitions: 1             # 파티션 수
+  replicas: 1               # 복제본 수 (브로커 수와 맞추는 게 안전)
   config:
     retention.ms: 60000     # 메시지 보관 시간 (1분, 테스트용)
 
@@ -81,7 +81,7 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # 클러스터 이름 (Kafka 리소스 metadata.name)
 spec:
-  partitions: 3             # 파티션 수
-  replicas: 3               # 복제본 수 (브로커 수와 맞추는 게 안전)
+  partitions: 1             # 파티션 수
+  replicas: 1               # 복제본 수 (브로커 수와 맞추는 게 안전)
   config:
     retention.ms: 60000     # 메시지 보관 시간 (1분, 테스트용)
